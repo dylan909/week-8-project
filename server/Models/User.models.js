@@ -10,7 +10,7 @@ User.init({
         autoIncrement: true
     },
     name: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
         allowNull: false
     },
     followers: {
@@ -18,10 +18,13 @@ User.init({
         allowNull: false
     },
     biography: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
+        allowNull: false
+    },
+    profilePicture: {
+        type: DataTypes.TEXT,
         allowNull: false
     }
-
 }, {
     sequelize: db
 })

@@ -1,15 +1,15 @@
 const express = require('express')
 const app = express()
 const cors = require('cors')
-const { userRouter } = require('./express-routers')
+const { userRouter, postRouter } = require('./express-routers')
 const port = 4000
 
 
 app.use(cors())
 
-app.use('/user', userRouter)
+app.use('/user', userRouter);
 
-
+app.use('/post', postRouter);
 
 
 app.listen(port, () => {

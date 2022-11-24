@@ -6,7 +6,7 @@ const { body, validationResult } = require('express-validator')
 // To get user's profile, if exists 
 userRouter.get('/myProfile', async (req, res) => {
     let user  = await User.findByPk(1)
-    res.send(user).sendStatus(200)    
+    res.send(user)  
 })
 
 // Will check if the user already exists, if they do return the user, if not create it

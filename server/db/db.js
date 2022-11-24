@@ -7,6 +7,5 @@ const db = new Sequelize({
     storage: path.join(__dirname, 'socialMediaTables.sqlite')
 })
 
-db.sync({ force: true })
 
 module.exports = db

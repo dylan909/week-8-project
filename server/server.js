@@ -11,8 +11,8 @@ app.use('/user', userRouter);
 
 app.use('/post', postRouter);
 
-app.get('/', (res, req) => {
-    res.send("hello world")
+app.get('/post/allPosts'( req, res ) => {
+    
 })
 
 

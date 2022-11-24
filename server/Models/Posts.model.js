@@ -19,7 +19,6 @@ Posts.init({
         type: DataTypes.STRING,
         allowNull: false
     }
-
 }, {
     sequelize: db
 })

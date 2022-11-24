@@ -13,6 +13,14 @@ User.init({
         type: DataTypes.TEXT,
         allowNull: false
     },
+    email: {
+        type: DataTypes.TEXT,
+        allowNull: false
+    },
+    password: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
     followers: {
         type: DataTypes.INTEGER,
         allowNull: false

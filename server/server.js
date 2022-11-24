@@ -11,6 +11,10 @@ app.use('/user', userRouter);
 
 app.use('/post', postRouter);
 
+app.get('/', (res, req) => {
+    res.send("hello world")
+})
+
 
 app.listen(port, () => {
     console.log(`sever on port http//localhost:${port}/`)

@@ -7,7 +7,7 @@ Posts.init({
     likes: {
         type: DataTypes.INTEGER,
     },
-    Commments: {
+    comments: {
         type: DataTypes.STRING,
         allowNull: false
     },
